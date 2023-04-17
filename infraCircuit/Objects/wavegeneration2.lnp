@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\wavegeneration2.obj" 
+TO ".\Objects\wavegeneration2" 
+PRINT(".\Listings\wavegeneration2.m51")

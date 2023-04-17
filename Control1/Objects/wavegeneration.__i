@@ -1,0 +1,1 @@
+"wavegeneration.c" OPTIMIZE (8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listings\wavegeneration.lst) TABS (2) OBJECT(.\Objects\wavegeneration.obj)

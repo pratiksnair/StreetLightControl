@@ -1,0 +1,46 @@
+C51 COMPILER V9.60.0.0   WAVEGENERATION                                                    03/15/2022 00:18:22 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE WAVEGENERATION
+OBJECT MODULE PLACED IN .\Objects\wavegeneration.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE wavegeneration.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Lis
+                    -tings\wavegeneration.lst) TABS(2) OBJECT(.\Objects\wavegeneration.obj)
+
+line level    source
+
+   1          //21427 Pratik Nair
+   2          #include<reg51.h>
+   3          #include<intrins.h>
+   4          void main()
+   5          {
+   6   1        unsigned int i;
+   7   1        unsigned int waveValue[16]={128,132,224,200,255,240,224,192,128,64,32,16,0,16,32,64};
+   8   1        while(1)
+   9   1        {
+  10   2          for(i=0;i<16;i++)
+  11   2          {
+  12   3            P1=waveValue[i];
+  13   3            _nop_();
+  14   3            _nop_();
+  15   3            _nop_();
+  16   3            _nop_();
+  17   3            _nop_();
+  18   3            _nop_();
+  19   3            _nop_();
+  20   3          }
+  21   2        }
+  22   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     52    ----
+   CONSTANT SIZE    =     32    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      32
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

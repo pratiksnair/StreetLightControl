@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\triangularwave.obj" 
+TO ".\Objects\triangularwave" 
+PRINT(".\Listings\triangularwave.m51")
